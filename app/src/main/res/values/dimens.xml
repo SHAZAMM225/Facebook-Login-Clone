@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="another" type="layout">@layout/activity_main</item>
+    <dimen name="image_height">150dp</dimen>
+    <dimen name="email_margin_start">30dp</dimen>
+    <dimen name="email_margin_top">45dp</dimen>
+    <dimen name="email_margin_end">30dp</dimen>
+    <dimen name="pass_margin_start">30dp</dimen>
+    <dimen name="pass_margin_top">8dp</dimen>
+    <dimen name="pass_margin_end">30dp</dimen>
+    <dimen name="login_margin_start">30dp</dimen>
+    <dimen name="login_margin_top">8dp</dimen>
+    <dimen name="login_margin_end">30dp</dimen>
+    <dimen name="forget_pass_mrstart">30dp</dimen>
+    <dimen name="forget_pass_mrtop">8dp</dimen>
+    <dimen name="forget_pass_mrend">30dp</dimen>
+    <dimen name="forget_pass_size">20sp</dimen>
+    <dimen name="view1_width">150dp</dimen>
+    <dimen name="view1_height">1dp</dimen>
+    <dimen name="ok_pad_start">10dp</dimen>
+    <dimen name="ok_pad_end">10dp</dimen>
+    <dimen name="view2_width">150dp</dimen>
+    <dimen name="veiw2_height">1dp</dimen>
+    <dimen name="new_acc_mrstart">30dp</dimen>
+    <dimen name="new_acc_end">30dp</dimen>
+    <dimen name="new_acc_bot">48dp</dimen>
+    <dimen name="new_acc_color">20sp</dimen>
+    <dimen name="logo_width">75dp</dimen>
+    <dimen name="logo_height">75dp</dimen>
+</resources>

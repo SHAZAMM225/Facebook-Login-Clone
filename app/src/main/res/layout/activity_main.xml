@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/image_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/email_margin_start"
+        android:layout_marginTop="@dimen/email_margin_top"
+
+        android:layout_marginEnd="@dimen/email_margin_end"
+        android:ems="10"
+        android:hint="Email or Phone"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/pass_margin_start"
+        android:layout_marginTop="@dimen/pass_margin_top"
+        android:layout_marginEnd="@dimen/pass_margin_end"
+        android:ems="10"
+        android:hint="Enter Your Password "
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/llogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_margin_start"
+        android:layout_marginTop="@dimen/login_margin_top"
+        android:layout_marginEnd="@dimen/login_margin_end"
+        android:background="@color/facebook"
+        android:enabled="false"
+        android:text="Login"
+        android:textColor="@color/text_logon_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/forget_pass_mrstart"
+        android:layout_marginTop="@dimen/forget_pass_mrtop"
+        android:layout_marginEnd="@dimen/forget_pass_mrend"
+        android:background="@color/white"
+        android:stateListAnimator="@null"
+        android:text="Forget Password?"
+        android:textColor="@color/facebook"
+        android:textSize="@dimen/forget_pass_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llogin" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forget">
+
+        <View
+            android:layout_width="@dimen/view1_width"
+            android:layout_height="@dimen/view1_height"
+            android:layout_gravity="center"
+            android:background="@color/black">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/ok_pad_start"
+            android:paddingEnd="@dimen/ok_pad_end"
+            android:text="@string/ok">
+
+
+        </TextView>
+
+        <View
+            android:layout_width="@dimen/view2_width"
+            android:layout_height="@dimen/veiw2_height"
+            android:layout_gravity="center"
+            android:background="@color/black"
+
+            >
+
+
+        </View>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/new_acc_mrstart"
+        android:layout_marginEnd="@dimen/new_acc_end"
+        android:layout_marginBottom="@dimen/new_acc_bot"
+        android:background="@color/greeen"
+        android:text="CREATE NEW FACEBOOK ACOUNT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/new_acc_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434"
+        app:srcCompat="@drawable/logo"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
